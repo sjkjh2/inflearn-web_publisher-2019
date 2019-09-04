@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ul, ol, li, dl, dt, dd</title>
+</head>
+<body>
+    <ul> <!-- 순서가 없는 리스트 -->
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <ol> <!-- 순서가 있는 리스트 -->
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ol>
+    <hr>
+    <ul>
+        <li><a href="#">menu 1</a>
+            <ul>
+            <li><a href="#">submenu 1</a></li>
+            <li><a href="#">submenu 2</a></li>
+            <li><a href="#">submenu 3</a></li>
+            <li><a href="#">submenu 4</a></li>
+            </ul>
+        </li>
+        <li><a href="#">menu 2</a></li>
+        <li><a href="#">menu 3</a></li>
+        <li><a href="#">menu 4</a></li>
+    </ul>
+    <hr>
+    <dl> <!-- 정의형 목록(dfn의 블럭 형태) ※dt가 하나인데 dd가 여러개 있을 수 있고, dt가 여러개이고 dd가 하나만 있으면 안되고, dt나 dd 각자 하나씩 있으면 안됨. -->
+        <dt><strong>Lorem ipsum dolor sit.</strong></dt> <!-- 인라인요소만 -->
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem rem aperiam numquam, beatae aspernatur necessitatibus dolor sapiente eum et quam unde, quaerat qui earum veritatis cumque labore cupiditate nam.</dd> <!-- 어떠한 태그가 와도 상관 없음 -->
+        <dt><strong>Lorem ipsum dolor sit.</strong></dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem rem aperiam numquam, beatae aspernatur necessitatibus dolor sapiente eum et quam unde, quaerat qui earum veritatis cumque labore cupiditate nam.</dd>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem rem aperiam numquam, beatae aspernatur necessitatibus dolor sapiente eum et quam unde, quaerat qui earum veritatis cumque labore cupiditate nam.</dd>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem rem aperiam numquam, beatae aspernatur necessitatibus dolor sapiente eum et quam unde, quaerat qui earum veritatis cumque labore cupiditate nam.</dd>
+    </dl>
+</body>
+</html>

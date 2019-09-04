@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<title lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table</title>
+</head>
+<body>
+    <!-- scope = col(세로) | row(가로) | colgroup | rowgroup , colspan(가로 합치기) | rowspan(세로합치기) -->
+    <table border="" width="100%"> <!-- 스타일은 css로만 처리 지금은 예제라서 어쩔 수 없이.. -->
+        <caption>table caption</caption> <!-- 표의 제목 -->
+        <colgroup>
+            <col width="25%"> <!-- css로 설정하는 것을 추천, width 값 설정은 마지막 하나는 설정 안함 -->
+            <col width="25%">
+            <col width="25%">
+            <col>
+        </colgroup>
+        <thead>
+            <tr> <!-- 행 -->
+                <th scope="col">table header cell</th>
+                <th scope="col">table header cell</th>
+                <th scope="col">table header cell</th>
+                <th scope="col">table header cell</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">table data cell</td>
+                <td>table data cell</td>
+                <td>table data cell</td>
+                <td>table data cell</td>
+            </tr>
+            <tr>
+                <!-- <td>table data cell</td> -->
+                <td>table data cell</td>
+                <td>table data cell</td>
+                <td>table data cell</td>
+            </tr>
+            <tr>
+                <!-- <td>table data cell</td> -->
+                <td>table data cell</td>
+                <td>table data cell</td>
+                <td>table data cell</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">result</th>
+                <td colspan="3">...</td>
+                <!-- <td>...</td> -->
+                <!-- <td>...</td> -->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</title>
