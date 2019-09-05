@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html5 form</title>
+</head>
+<body>
+    <form action="#" method="post"> <!-- novalidate="novalidate" 속성은 문법 검증을 안함 -->
+        <fieldset>
+            <legend>html5 form</legend>
+            <p>
+                <label for="username">이름</label>
+                <input type="text" id="username" name="username" value="" disabled="disabled"> <!-- disabled속성은 비활성화로 적용 -->
+            </p>
+            <p>
+                <label for="usermail">이메일</label>
+                <input type="email" id="usermail" name="usermail" value="" placeholder="user@email.com"> <!-- html5에서 추가됨 입력란에 이메일 양식을 제대로 입력을 안하면 경고 메시지 창이 뜸. -->
+            </p>
+            <p>
+                <label for="userurl">웹사이트</label>
+                <input type="url" id="userurl" name="userurl" value="" autofocus="autofocus" autocomplete="off"> <!-- autofocus속성은 자동을 포커스를 가지게 될 요소에 지정 --> <!-- autocomplete속성은 자동 완성기능 -->
+            </p>
+            <p>
+                <label for="order">주문수량</label>
+                <input type="number" id="order" name="order" min="1" max="20" value="" required="required"> <!-- required 속성은 필수 입력 항목을 지정 -->
+                <span>개</span>
+            </p>
+            <p>
+                <label for="userrang">길이</label>
+                <input type="range" id="userrang" name="userrang" min="0" max="100" step="10" value="">
+            </p>
+            <p>
+                <label for="userdate">제출일</label>
+                <input type="date" id="userdate" name="userdate" min="2019-09-01" max="2019-10-10" value="2019-09-05">
+            </p>
+            <p>
+                <label for="usercolor">색상선택</label>
+                <input type="color" id="usercolor" name="usercolor" value="#ff0000">
+            </p>
+            <p>
+                <label for="usertel">연락처</label>
+                <input type="tel" id="usertel" name="usertel" value="">
+            </p>
+        </fieldset>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
