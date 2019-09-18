@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>word-break, white-space</title>
+    <style type="text/css">
+        body {
+            font-family:'Malgun Gothic', sans-serif;
+            font-size:16px;
+        }
+        .content, .content2, .content3 {
+            width:500px;
+            border:3px solid black;
+        }
+        .content p {
+            word-break:break-all;
+            /* 단어가 너무 길 때 부모의 영역 안으로 정리 할 때 */
+        }
+        .content2 p {
+            text-align:justify;
+        }
+        .content3 p {
+            text-align:justify;
+            word-break:break-all;
+        }
+        /* white-space:pre | nowrap */
+        .white1 {
+            width:600px;
+            border:2px solid black;
+            white-space:pre;
+        }
+        .white2 {
+            width:600px;
+            border:2px solid black;
+            white-space:pre-wrap;
+        }
+        .white3 {
+            width:600px;
+            border:2px solid black;
+            white-space:pre-line;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>adsgfadsgasdgfasdjifhal;sdkgjhvba;sdohgjkva;dskjhfjjjfjfjfjfjfjfjffffffflikjhbadxlivuhaisudvhpa;iudshuuuuuuuuuuuhuhuhhhhhhhhhhhhhhhhhhhhhhkjxzCHvlkzXJCHvl;kzxcjhv;zkxcjhvlzkxcjhvlzxckjhvlzxckjhvlkzxcjhvlkzxcjhvlzxkcjhvauidshgfpaekjghskdfhhsdflkjahsdflkjadshfliasdhflkdsjahflkajsdhflkadsjhflsadhgfasdiflaksjdhfldksjh</p>
+    </div>
+    <div class="content2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati suscipit eos culpa eius iusto cumque non ipsum reiciendis consequatur repellendus aliquid ullam laborum doloremque id, molestias incidunt dignissimos saepe impedit.
+        Cumque nihil sequi in laborum fugiat ad perferendis, quidem adipisci labore ullam eveniet quaerat sint dolore facilis. Aliquid pariatur a vitae necessitatibus ex natus quam ab omnis amet ullam? Blanditiis!
+        Quod sit nostrum, debitis assumenda similique architecto nihil aliquid beatae quo autem a quaerat tempora delectus facilis! Totam non eum odio tempora similique aspernatur quae fugiat expedita, recusandae eligendi quibusdam.
+        Numquam voluptatem hic libero repellendus facilis veritatis sequi sapiente assumenda pariatur odit aperiam laboriosam nesciunt, sit perspiciatis quod minus a impedit eveniet consectetur adipisci similique nam minima aut? Sapiente, hic?</p>
+    </div>
+    <div class="content3">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati suscipit eos culpa eius iusto cumque non ipsum reiciendis consequatur repellendus aliquid ullam laborum doloremque id, molestias incidunt dignissimos saepe impedit.
+        Cumque nihil sequi in laborum fugiat ad perferendis, quidem adipisci labore ullam eveniet quaerat sint dolore facilis. Aliquid pariatur a vitae necessitatibus ex natus quam ab omnis amet ullam? Blanditiis!
+        Quod sit nostrum, debitis assumenda similique architecto nihil aliquid beatae quo autem a quaerat tempora delectus facilis! Totam non eum odio tempora similique aspernatur quae fugiat expedita, recusandae eligendi quibusdam.
+        Numquam voluptatem hic libero repellendus facilis veritatis sequi sapiente assumenda pariatur odit aperiam laboriosam nesciunt, sit perspiciatis quod minus a impedit eveniet consectetur adipisci similique nam minima aut? Sapiente, hic?</p>
+    </div>
+    <hr>
+    <div class="white1">
+        Lorem
+        ipsum dolor sit amet
+        consectetur adipisicing.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odit adipisci corporis impedit rem quibusdam provident neque optio saepe nihil voluptatum eum quo blanditiis excepturi, inventore officiis et corrupti quos.
+    </div>
+    <div class="white2">
+        Lorem
+        ipsum dolor sit amet
+        consectetur adipisicing.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odit adipisci corporis impedit rem quibusdam provident neque optio saepe nihil voluptatum eum quo blanditiis excepturi, inventore officiis et corrupti quos.
+    </div>
+    <div class="white3">
+        Lorem
+        ipsum dolor sit amet
+        consectetur adipisicing.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odit adipisci corporis impedit rem quibusdam provident neque optio saepe nihil voluptatum eum quo blanditiis excepturi, inventore officiis et corrupti quos.
+    </div>
+</body>
+</html>
