@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>boxmodels</title>
+    <style type="text/css">
+    * {
+        margin:0;
+        padding:0;
+    }
+    .box {
+        /* display:inline; */
+        margin:20px;
+        /* padding-top:20px; */
+        padding:20px;
+        /* padding:100px 50px; top bottom | right left */
+        /* padding:100px 50px 10px; top | right left | bottom */
+        /* padding:100px 50px 10px 0; */
+        border:5px solid black;
+        border-style:double;
+        background-color:lime;
+    }
+    span.box {
+        display:block;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquid at porro autem voluptatum id ullam dicta officiis quae numquam.
+    </div>
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquid at porro autem voluptatum id ullam dicta officiis quae numquam.
+    </div>
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquid at porro autem voluptatum id ullam dicta officiis quae numquam.
+    </div>
+    <span class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquid at porro autem voluptatum id ullam dicta officiis quae numquam.
+    </span>
+</body>
+</html>

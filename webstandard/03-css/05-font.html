@@ -12,13 +12,24 @@
             font-size:12px;
         }
         h1 {
+            background-color:green;
             font-size:2.4em;
             letter-spacing:1em;
+            text-transform:uppercase;
+            /* uppercase | lowercase | capitalize */
+        }
+        h1 small {
+            background-color:lime;
+            font-size:.5em;
+            vertical-align:5px;
+            /* top | middle | baseline | bottom */
         }
         h2 {
             color:#ff0000;
             font-size:2em;
             font-variant:small-caps;
+            text-decoration:line-through;
+            /* underline | overline | line-through | none */
         }
         address {
             font-style:normal;
@@ -26,17 +37,25 @@
         }
         .lead {
             font-weight:bold;
+            word-spacing:1em;
             /* bold | bolder | 600 | 700 | 800 | 900 */
             /* normal | lighter | 100 | 200 | 300 | 400 | 500 */
+        }
+        .text {
+            text-indent:1em;
+            text-align:center;
+            /* left | center | right | justify */
+            line-height:1.6em;
+            /* white-space:nowrap; */
         }
     </style>
 </head>
 <body>
     <div id="wrap">
-        <h1>style example</h1>
+        <h1>style example <small>sample</small></h1>
         <h2>style Example (font-variant)</h2>
         <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, eaque deserunt officiis sint, reprehenderit dolore harum nostrum neque quos a distinctio officia, consequatur incidunt tenetur. Distinctio nostrum quidem recusandae alias.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, eaque deserunt officiis sint, reprehenderit dolore harum nostrum neque quos a distinctio officia, consequatur incidunt tenetur. Distinctio nostrum quidem recusandae alias.</p>
+        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, magni autem consequuntur repudiandae quos aspernatur totam nostrum aperiam quia cum vel veniam suscipit aliquam nihil doloremque! Dolore laboriosam ratione sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eum ducimus, vel velit nostrum cupiditate iure. Aut laborum ipsum accusantium dolore, maiores, magnam laudantium vitae dolor tempora, repellat nobis quis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, eaque deserunt officiis sint, reprehenderit dolore harum nostrum neque quos a distinctio officia, consequatur incidunt tenetur. Distinctio nostrum quidem recusandae alias.</p>
     </div>
     <hr>
     <address>Lorem ipsum dolor sit amet.</address>
