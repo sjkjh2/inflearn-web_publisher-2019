@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="eko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table</title>
+    <style type="text/css">
+    .tbl {
+        width:800px;
+        table-layout:fixed;
+        border-collapse:collapse;
+    }
+    .tbl caption {
+        caption-side:bottom;
+    }
+    .tbl td, .tbl th {
+        border:1px solid red; 
+    }
+    .tbl .ex1, .tbl .ex2 {
+        /* empty-cells:show; */
+        empty-cells:hide; /* border-collapse 상에서는 표현(x)) */
+    }
+    </style>
+</head>
+<body>
+    <table class="tbl">
+        <caption>table caption</caption>
+        <thead>
+            <tr>
+                <th scope="col">table header celll-1</th>
+                <th scope="col">table header celll-2</th>
+                <th scope="col">table header celll-3</th>
+                <th scope="col">table header celll-4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>table date cell 1-1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione inventore assumenda error corporis laudantium sed dolore molestiae maiores, ipsam dignissimos!</td>
+                <td>table date cell 1-2</td>
+                <td>table date cell 1-3</td>
+                <td>table date cell 1-4</td>
+            </tr>
+            <tr>
+                <td>table date cell 2-1</td>
+                <td>table date cell 2-2</td>
+                <td>table date cell 2-3</td>
+                <td>table date cell 2-4</td>
+            </tr>
+            <tr>
+                <td>table date cell 3-1</td>
+                <td>table date cell 3-2</td>
+                <td>table date cell 3-3</td>
+                <td>table date cell 3-4</td>
+            </tr>
+            <tr>
+                <td>table date cell 4-1</td>
+                <td>table date cell 4-2</td>
+                <td class="ex1"></td>
+                <td class="ex2"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
