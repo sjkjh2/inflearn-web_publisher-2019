@@ -58,17 +58,38 @@
         font-size:14px;
         line-height:30px;
     }
+    .btn_pack.ico {
+        position:relative;
+    }
+    .btn_pack.ico .plus {
+        display:block;
+        position:absolute;
+        left:10px;
+        top:50%;
+        margin-top:-5px;
+        width:10px;
+        height:10px;
+        background:url(img/btn_pack.gif) no-repeat -20px -157px;
+    }
+    .btn_pack.ico a, 
+    .btn_pack.ico button,
+    .btn_pack.ico input {
+        padding-left:16px;
+    }
     </style>
 </head>
 <body>
     <div class="area">
-        <span class="btn_pack">
+        <span class="btn_pack ico">
+            <span class="plus"></span>
             <a href="#">anchor</a>
         </span>
-        <span class="btn_pack">
+        <span class="btn_pack ico">
+            <span class="plus"></span>
             <button>button</button>
         </span>
-        <span class="btn_pack">
+        <span class="btn_pack ico">
+            <span class="plus"></span>
             <input type="button" value="input">
         </span>
         <hr>
