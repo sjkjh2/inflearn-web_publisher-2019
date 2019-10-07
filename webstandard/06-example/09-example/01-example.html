@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>example</title>
+    <style>
+    /* reset */
+    html,body{width:100;height:100%;}
+    body,ul,li{margin:0;padding:0;}
+    body{font-family:'Malgun Gothic','맑은 고딕',sans-serif;font-size:12px;}
+    li{list-style:none;}
+    em{font-style:normal;}
+    img{vertical-align:top;}
+    a{text-decoration:none;color:inherit;}
+    a:hover,a:focus{text-decoration:underline;}
+
+    /* style */
+    #content {width:990px; margin:0 auto;}
+    .car_gallery {}
+    .car_gallery ul {.zoom:1;}
+    .car_gallery ul:after {content:''; display:block; clear:both;}
+    .car_gallery li {float:left;width:192px;margin:17px 17px 0 0;color:#222;}
+    .car_gallery li a {display:block; position:relative;}
+    .car_gallery li a {display:block; position:relative;}
+    .car_gallery li a:hover {color:#118eff;}
+    .car_gallery li a .thumb img {width:100%;}
+    .car_gallery li a .txt {display:block; margin-top:5px; padding:0 4px; line-height:18px;}
+    .car_gallery li a .ico {display:block; position:absolute; right:8px; bottom:48px; width:23px; height:23px; background:url(img/ico.png) no-repeat; text-indent:-9999em;}
+    .car_gallery li a .ico.mov {background-position:-70px 0;}
+    .car_gallery li a .ico.pic {background-position:-40px 0;}
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div class="car_gallery">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="thumb"><img src="img/thumb1.jpg" alt=""></span>
+                        <em class="txt">11월 풀체인지급 변신 현대차 그랜저IG F/L...</em>
+                        <span class="ico mov">동영상</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="thumb"><img src="img/thumb2.jpg" alt=""></span>
+                        <em class="txt">현대차 신형 투싼 "매우 흥미로운 디자인, 실내...</em>
+                        <span class="ico pic">사진</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="thumb"><img src="img/thumb3.jpg" alt=""></span>
+                        <em class="txt">현대자동차 베라크루즈[특별했던차]</em>
+                        <span class="ico pic">사진</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="thumb"><img src="img/thumb4.jpg" alt=""></span>
+                        <em class="txt">현실화된 현대차 픽업트럭, 이르면 2021년 첫...</em>
+                        <span class="ico pic">사진</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

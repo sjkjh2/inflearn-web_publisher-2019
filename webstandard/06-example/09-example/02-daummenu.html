@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>daum menu</title>
+    <style>
+    /* reset */
+    html,body{width:100;height:100%;}
+    body,h1,h2,h3,h4,h5,h6,ul,li,p{margin:0;padding:0;}
+    body,h1,h2,h3,h4,h5,h6{font-family:'Malgun Gothic','맑은 고딕',sans-serif;font-size:12px;}
+    li{list-style:none;}
+    em{font-style:normal;}
+    img{vertical-align:top;}
+    a{text-decoration:none;color:inherit;}
+    a:hover,a:focus{text-decoration:underline;}
+    .blind { display:block; position:absolute; left:0; top:-9999em; overflow:hidden; }
+
+    /* style */
+    #header {width:1300px; margin:0 auto;}
+    #header .tle {float:left; margin:35px 0 23px 3px;}
+    #header .tle a {display:block; width:135px; height:50px; background:url(img/gnb.png) no-repeat 0 0; text-indent:-9999em;}
+    #header .sub {float:left; margin:35px 0 23px 50px;}
+    #header .sub li {}
+    #header .sub li a {display:block; width:89px; height:50px; background:url(img/gnb.png) no-repeat 0 -60px; text-indent:-9999em;}
+    #header .area {clear:both; *zoom:1; border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
+    #header .area:after {content:''; display:block; clear:both;}
+    #header .area .gnb_real {float:left;}
+    #header .area .gnb_real li {float:left;}
+    #header .area .gnb_real li a {display:block; padding-right:20px; height:140px; background:url(img/gnb.png) no-repeat; text-indent:-9999em;}
+    #header .area .gnb_real li.mm01 a {width:124px; background-position:0 -160px;}
+    #header .area .gnb_real li.mm02 a {width:70px; background-position:-161px -160px;}
+    #header .area .gnb_real li.mm03 a {width:77px; background-position:-268px -160px;}
+    #header .area .gnb_real li.mm04 a {width:77px; background-position:-381px -160px;}
+    #header .area .gnb_real li.mm05 a {width:71px; background-position:-492px -160px;}
+    #header .area .gnb_real li.mm06 a {width:122px; background-position:-601px -160px;}
+    #header .area .gnb_real li.mm07 a {width:72px; background-position:-763px -160px;}
+    #header .area .gnb_real li.mm08 a {width:122px; background-position:-872px -160px;}
+    #header .area .gnb_real li.mm01 a:hover,
+    #header .area .gnb_real li.mm01 a.active {background-position:0 -300px;}
+    #header .area .gnb_real li.mm02 a:hover,
+    #header .area .gnb_real li.mm02 a.active {background-position:-161px -300px;}
+    #header .area .gnb_real li.mm03 a:hover,
+    #header .area .gnb_real li.mm03 a.active {background-position:-268px -300px;}
+    #header .area .gnb_real li.mm04 a:hover,
+    #header .area .gnb_real li.mm04 a.active {background-position:-381px -300px;}
+    #header .area .gnb_real li.mm05 a:hover,
+    #header .area .gnb_real li.mm05 a.active {background-position:-492px -300px;}
+    #header .area .gnb_real li.mm06 a:hover,
+    #header .area .gnb_real li.mm06 a.active {background-position:-601px -300px;}
+    #header .area .gnb_real li.mm07 a:hover,
+    #header .area .gnb_real li.mm07 a.active {background-position:-763px -300px;}
+    #header .area .gnb_real li.mm08 a:hover,
+    #header .area .gnb_real li.mm08 a.active {background-position:-872px -300px;}
+    #header .area .app {float:right; margin-top:55px;}
+    #header .area .app a {display:block; width:104px; height:30px; background:url(img/gnb.png) no-repeat 0 -120px; text-indent:-9999em;}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1 class="tle"><a href="#">부동산</a></h1>
+        <h2 class="blind">관련서비스</h2>
+        <ul class="sub">
+            <li class="mm01"><a href="#">금융</a></li>
+        </ul>
+        <h2 class="blind">메인메뉴</h2>
+        <div class="area">
+            <ul class="gnb_real">
+                <li class="mm01"><a href="#" class="active">부동산홈</a></li>
+                <li class="mm02"><a href="#">주거</a></li>
+                <li class="mm03"><a href="#">비즈</a></li>
+                <li class="mm04"><a href="#">투자</a></li>
+                <li class="mm05"><a href="#">경매</a></li>
+                <li class="mm06"><a href="#">인테리어</a></li>
+                <li class="mm07"><a href="#">뉴스</a></li>
+                <li class="mm08"><a href="#">커뮤니티</a></li>
+            </ul>
+            <p class="app"><a href="#">광고안내</a></p>
+        </div>
+    </div>
+</body>
+</html>
