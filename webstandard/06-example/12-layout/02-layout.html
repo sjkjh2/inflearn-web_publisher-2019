@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layout, 2column</title>
+    <style>
+    /* reset */
+    body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+    body,input,textarea,select,button,table{font-family:'Malgun Gothic','돋움',Dotum,AppleGothic,sans-serif;font-size:12px}
+    img,fieldset{border:0}
+    img{vertical-align:top;}
+    ul,ol{list-style:none}
+    em,address{font-style:normal}
+    a{text-decoration:none}
+    a:hover,a:active,a:focus{text-decoration:underline}
+
+    /* layout */
+    #wrap {background:gray;}
+    #header {min-width:970px; padding:20px 0; background:red;}
+    #header .header-area {margin:0 auto; width:970px;}
+    #container {padding-bottom:20px; margin:0 auto; width:970px; *zoom:1; background:lime;}
+    #container:after {content:''; display:block; clear:both;}
+    #container #content {float:right; width:600px; background:blue;}
+    #container #content .inner {padding:20px;}
+    #container .aside {float:left; width:370px; background:green;}
+    #container .aside .inner {padding:20px;}
+    #footer {min-width:970px; padding:20px 0; background:silver;}
+    #footer .footer-area {margin:0 auto; width:970px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <div id="header">
+            <div class="header-area">
+                <h1>logo</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nesciunt aliquid maxime laborum provident architecto voluptatibus quam alias, cumque totam iusto laboriosam natus nam consectetur aliquam, maiores pariatur atque ex!</p>
+            </div>
+        </div>
+        <!-- //header -->
+        <!-- container -->
+        <div id="container">
+            <!-- content -->
+            <div id="content">
+                <div class="inner">
+                    <h2>content</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nesciunt aut molestias eveniet rerum excepturi at nisi aperiam amet. Neque ipsum necessitatibus sed rerum enim temporibus exercitationem eius aliquam ut nam? Ea blanditiis quam facere nobis, unde voluptates pariatur itaque molestias, beatae voluptas eius, aspernatur consequatur? Quod sequi quos incidunt ipsam sint dolorum cum eum reiciendis nihil asperiores consequuntur consequatur, esse temporibus quaerat ea laudantium quas labore reprehenderit accusantium doloribus neque quo laboriosam. Incidunt esse beatae dicta quisquam, culpa nam autem aliquam voluptate! Quam earum explicabo, ut voluptatum consectetur a optio minus animi consequuntur inventore eligendi illum. Voluptas, consequuntur officiis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nesciunt aut molestias eveniet rerum excepturi at nisi aperiam amet. Neque ipsum necessitatibus sed rerum enim temporibus exercitationem eius aliquam ut nam? Ea blanditiis quam facere nobis, unde voluptates pariatur itaque molestias, beatae voluptas eius, aspernatur consequatur? Quod sequi quos incidunt ipsam sint dolorum cum eum reiciendis nihil asperiores consequuntur consequatur, esse temporibus quaerat ea laudantium quas labore reprehenderit accusantium doloribus neque quo laboriosam. Incidunt esse beatae dicta quisquam, culpa nam autem aliquam voluptate! Quam earum explicabo, ut voluptatum consectetur a optio minus animi consequuntur inventore eligendi illum. Voluptas, consequuntur officiis.</p>
+                </div>
+            </div>
+            <!-- //content -->
+            <!-- aside -->
+            <div class="aside">
+                <div class="inner">
+                    <h2>aside</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero veritatis repellendus porro minima error mollitia deleniti excepturi ipsum, exercitationem est, aperiam iste! Modi vitae labore ab tenetur eveniet deserunt quam consectetur repellat totam dolorem, incidunt enim voluptates ex dicta beatae veniam soluta! Tempora eum dicta ratione tenetur vero quam alias, mollitia quod, totam nemo libero eos, ut natus sunt quisquam quos! Officia, debitis voluptate placeat temporibus officiis mollitia tempore ex similique ipsam modi rem explicabo consequatur magni incidunt accusamus cum, commodi quibusdam! Similique corporis, illo, adipisci sint enim rerum eaque quibusdam sapiente deleniti quod rem ipsum, perferendis ex amet! Consequuntur!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fugit cum iste, ullam saepe deleniti modi obcaecati dicta ratione harum officia accusantium incidunt maxime cupiditate eum? Quasi labore minus provident accusantium aut, fugit laborum saepe vel, facilis tempora quaerat voluptatibus similique ducimus autem perspiciatis vero blanditiis corrupti ab eligendi! Officiis.</p>
+                </div>
+            </div>
+            <!-- //aside -->
+        </div>
+        <!-- //container -->
+        <!-- footer -->
+        <div id="footer">
+            <div class="footer-area">
+                <address>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eius?</address>
+                <p>copyright &copy;</p>
+            </div>
+        </div>
+        <!-- //footer -->
+    </div>
+</body>
+</html>

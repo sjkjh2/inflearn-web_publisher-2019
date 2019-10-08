@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <style>
+    /* Common */
+    body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+    body,input,textarea,select,button,table{font-family:'Malgun Gothic','돋움',Dotum,AppleGothic,sans-serif;font-size:12px}
+    img,fieldset{border:0}
+    img{vertical-align:top}
+    ul,ol{list-style:none}
+    em,address{font-style:normal}
+    a{text-decoration:none}
+    a:hover,a:active,a:focus{text-decoration:underline}
+    legend,.blind{display:block;position:absolute;left:0;top:-9999em;overflow:hidden;}
+
+    /* style */
+    </style>
+</head>
+<body>
+    <div class="login">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>로그인</legend>
+                <p>
+                    <label for="user_id">ID</label>
+                    <input type="text" id="user_id" name="user_id" value="" placeholder="ID">
+                </p>
+                <p>
+                    <label for="user_pass">PASSWORD</label>
+                    <input type="text" id="user_pass" name="user_pass" value="" placeholder="PASSWORD">
+                </p>
+                <div class="area">
+                    <p>
+                        <input type="checkbox" id="user_login" name="user_login" value="">
+                        <label for="user_login"><span>로그인 유지</span></label>
+                    </p>
+                    <p>
+                        <button type="button"><span>로그인</span></button>
+                    </p>
+                </div>
+            </fieldset>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">아이디/비밀번호 찾기</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">Open ID</a></li>
+                </ul>
+            </div>
+        </form>
+        <p><button type="button">X</button></p>
+    </div>
+</body>
+</html>
